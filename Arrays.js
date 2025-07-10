@@ -232,13 +232,12 @@ function ladybug(input) {
       if (position < 0 || position >= fieldSize) {
         break; // Ladybug flies away
       }
-
+      
       if (field[position] === 0) {
         field[position] = 1; // Ladybug lands
         break;
       }
     }
   }
-
   console.log(field.join(' '));
 }
